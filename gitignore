@@ -15,3 +15,5 @@
 /.clang-format
 
 # misc
+
+/External Libraries
