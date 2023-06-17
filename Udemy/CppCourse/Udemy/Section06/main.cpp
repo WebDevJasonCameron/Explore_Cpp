@@ -34,8 +34,11 @@ using namespace std;
 int main() {
 
     int number_of_rooms {0};
-    const int cost_per_room {30};
+    const double cost_per_room {30};
+    double total_per_room {0};
     const double tax_rate {0.06};
+    double total_tax {0};
+    double total {};
 
 
     cout << "Hello, welcome to Frank's Carpet Cleaning Service\n" << endl;
@@ -45,20 +48,17 @@ int main() {
     cout << "\nEstimate for carpet cleaning service " << endl;
     cout << "Number of rooms: " << number_of_rooms << endl;
     cout << "Price per room: $" << cost_per_room << endl;
-    cout << "Cost for all rooms: $" << number_of_rooms * cost_per_room << endl;
-    cout << "Tax: $" << number_of_rooms * cost_per_room * tax_rate << endl;
+
+    total_per_room = number_of_rooms * cost_per_room;
+    cout << "Cost for all rooms: $" << total_per_room << endl;
+
+    total_tax = number_of_rooms * cost_per_room * tax_rate;
+    cout << "Tax: $" << total_tax << endl;
     cout << "================================================" << endl;
 
-    double total = (number_of_rooms * cost_per_room) + (number_of_rooms * cost_per_room * tax_rate);
+    total = total_per_room + total_tax;
     cout << "Total Cost: $" << total << endl;
     cout << "This total is only good for 30 days.";
-
-
-
-
-
-
-
 
 
     return 0;
