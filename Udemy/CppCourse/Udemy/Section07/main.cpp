@@ -5,7 +5,7 @@ using namespace std;
 // COMPOUND DATA TYPES
 
 // ARRAYS
-
+/*
 int main() {
 
 //    char vowels[] {'a', 'e', 'i', 'o', 'u'};
@@ -42,6 +42,13 @@ int main() {
     cout << "Fifth score at index 4: " << test_scores[4] << endl;
 
     cout << "\nNotice what the value of the array name is: " << test_scores << endl;
+
+    return 0;
+}
+*/
+
+// MULTI LEVEL ARRAY
+int main() {
 
     return 0;
 }
