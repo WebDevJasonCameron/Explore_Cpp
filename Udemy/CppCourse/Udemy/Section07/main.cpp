@@ -64,14 +64,38 @@ int main() {
 //    vector <int> test_scores(3)                   // 3 elements all initialized to zero
 //    vector <int> test_scores(3, 100)              //3 elements all initialized to 100
 
+//    vector <int> test_scores{100, 98, 89};
+
+//    cout << "\nTest scores using array syntax" << endl;
+//    cout << test_scores[0] << endl;
+//    cout << test_scores[1] << endl;
+//    cout << test_scores[2] << endl;
+
     vector <int> test_scores{100, 98, 89};
 
-    cout << "\nTest scores using array syntax" << endl;
+    cout << "\nTest scores using vector syntax" << endl;
+    cout << test_scores.at(0) << endl;
+    cout << test_scores.at(1) << endl;
+    cout << test_scores.at(2) << endl;
+
+    cout << "\nThere are " << test_scores.size() << " scores in the vector" << endl;
+
+    cout << "\nEnter 3 test scores: ";
+    cin >> test_scores.at(0);
+    cin >> test_scores.at(1);
+    cin >> test_scores.at(2);
+
+    cout << "\nUpdated test scores: " << endl;
     cout << test_scores[0] << endl;
     cout << test_scores[0] << endl;
     cout << test_scores[0] << endl;
 
+    cout << "\nEnter a test score to add to the vector: ";
+    int score_to_add {0};
+    cin >> score_to_add;
 
+    test_scores.push_back(score_to_add);
+    
 
 
 
