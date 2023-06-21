@@ -87,15 +87,31 @@ int main() {
 
     cout << "\nUpdated test scores: " << endl;
     cout << test_scores[0] << endl;
-    cout << test_scores[0] << endl;
-    cout << test_scores[0] << endl;
+    cout << test_scores[1] << endl;
+    cout << test_scores[2] << endl;
 
     cout << "\nEnter a test score to add to the vector: ";
     int score_to_add {0};
     cin >> score_to_add;
 
     test_scores.push_back(score_to_add);
-    
+
+    cout << "\nEnter one more test score to add to the vector: ";
+    cin >> score_to_add;
+
+    test_scores.push_back(score_to_add);
+
+    cout << "\nTest scores are now:" << endl;
+    cout << test_scores[0] << endl;
+    cout << test_scores[1] << endl;
+    cout << test_scores[2] << endl;
+    cout << test_scores[3] << endl;
+    cout << test_scores[4] << endl;
+
+    cout << "\nThere are now " << test_scores.size() << " scores in the vector" << endl;
+
+//    cout << "This should cause an exception!!" << test_scores.at(10);
+
 
 
 
