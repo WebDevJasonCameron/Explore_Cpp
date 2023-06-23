@@ -1,6 +1,13 @@
 #include <iostream>
 
+using namespace std;
+
+// EXPRESSIONS AND STATEMENTS
+
+//
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+
+
     return 0;
 }
