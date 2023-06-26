@@ -183,6 +183,7 @@ int main(){
  * the sum of the 3 integers and
  * the average of the 3 integers
  */
+/*
 int main(){
 
     int total {};
@@ -206,7 +207,14 @@ int main(){
     cout << endl;
     return 0;
 }
+*/
 
+// Testing for Equality
+int main(){
+
+
+    return 0;
+}
 
 
 
