@@ -6,6 +6,8 @@
 /.codelite
 /.ctagsd
 
+/instructor
+
 # testing
 
 /Debug
