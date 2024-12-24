@@ -13,7 +13,7 @@
 # testing
 
 /Debug
-
+/Instructor
 # production
 
 /.clang-format

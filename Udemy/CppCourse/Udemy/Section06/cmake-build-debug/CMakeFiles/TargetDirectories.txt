@@ -1,3 +1,0 @@
-/Users/jasoncameron/Desktop/Learning/LearningCpp/Udemy/CppCourse/Udemy/Section06/cmake-build-debug/CMakeFiles/Section06.dir
-/Users/jasoncameron/Desktop/Learning/LearningCpp/Udemy/CppCourse/Udemy/Section06/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/jasoncameron/Desktop/Learning/LearningCpp/Udemy/CppCourse/Udemy/Section06/cmake-build-debug/CMakeFiles/rebuild_cache.dir
