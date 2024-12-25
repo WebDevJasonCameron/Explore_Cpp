@@ -1,9 +1,6 @@
 #include <iostream>
 
-using namespace std;
-
 int main() {
-    cout << "Hello From Project 1" << endl;
+    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
-

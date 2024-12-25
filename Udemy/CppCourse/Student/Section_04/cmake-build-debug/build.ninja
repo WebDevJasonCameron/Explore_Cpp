@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_Section_04: phony || .
 
 build CMakeFiles/Section_04.dir/main.cpp.o: CXX_COMPILER__Section_04_unscanned_Debug /Users/jasoncameron/Desktop/Learning/LearningCpp/Udemy/CppCourse/Student/Section_04/main.cpp || cmake_object_order_depends_target_Section_04
   DEP_FILE = CMakeFiles/Section_04.dir/main.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.5 -fcolor-diagnostics
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.5 -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Section_04.dir
   OBJECT_FILE_DIR = CMakeFiles/Section_04.dir
   TARGET_COMPILE_PDB = CMakeFiles/Section_04.dir/
