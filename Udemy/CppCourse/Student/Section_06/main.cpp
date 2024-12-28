@@ -24,7 +24,11 @@ int main() {
     cout << "double: " << sizeof(double) << " bytes. " << endl;
     cout << "long double: " << sizeof(long double) << "bytes.";
 
+    // Use values defined in <climits>
+    cout << " =======================================" << endl;
 
+    cout << "Minimum values: "  << endl;
+    cout << "char: " << CHAR_MIN << endl;
 
 
     // Primitive Data Types *************************************************************
