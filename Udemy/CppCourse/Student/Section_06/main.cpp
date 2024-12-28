@@ -29,6 +29,33 @@ int main() {
 
     cout << "Minimum values: "  << endl;
     cout << "char: " << CHAR_MIN << endl;
+    cout << "int: " << INT_MIN << endl;
+    cout << "short: " << SHRT_MIN << endl;
+    cout << "long: " << LONG_MIN << endl;
+    cout << "long long: " << LLONG_MIN << endl;
+
+    cout << "======================================" << endl;
+
+    cout << "Maximum values: "  << endl;
+    cout << "char: " << CHAR_MAX << endl;
+    cout << "int: " << INT_MAX << endl;
+    cout << "short: " << SHRT_MAX << endl;
+    cout << "long: " << LONG_MAX << endl;
+    cout << "long long: " << LLONG_MAX << endl;
+
+    // sizeof can also be used with variables names
+    cout << "=======================================" << endl;
+
+    cout << "sizeof using variable names: " << endl;
+    int age {21};
+    cout << "age is " << sizeof(age) << " bytes." << endl;
+    // or
+    cout << "age is " << sizeof age << " bytes." << endl;
+
+    double wage {22.24};
+    cout << "wage is " << sizeof(wage) << " bytes." << endl;
+    // or
+    cout << "wage is " << sizeof wage << " bytes." << endl;
 
 
     // Primitive Data Types *************************************************************
