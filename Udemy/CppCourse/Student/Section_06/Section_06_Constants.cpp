@@ -34,9 +34,9 @@ using namespace std;
 
 int main() {
 
-    const double pricePerRoom = {30};
-    const double salesTax = {0.06};
-    const int estimateExpiry = {30};
+    const double pricePerRoom = 30;
+    const double salesTax = 0.06;
+    const int estimateExpiry = 30;
 
     cout << "How many number of rooms are there?  " << endl;
     int numberOfRooms = {0};

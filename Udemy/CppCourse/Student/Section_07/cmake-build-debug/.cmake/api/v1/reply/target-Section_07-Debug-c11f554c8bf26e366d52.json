@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Section_06"
+			"path" : "Section_07"
 		}
 	],
 	"backtrace" : 1,
@@ -49,12 +49,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "Section_06::@6890427a1f51a3e7e1df",
+	"id" : "Section_07::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -70,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Section_06",
-	"nameOnDisk" : "Section_06",
+	"name" : "Section_07",
+	"nameOnDisk" : "Section_07",
 	"paths" : 
 	{
 		"build" : ".",
@@ -83,8 +82,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -94,12 +92,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "main.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Section_06_Constants.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

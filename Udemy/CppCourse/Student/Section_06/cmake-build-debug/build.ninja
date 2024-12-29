@@ -61,6 +61,12 @@ build CMakeFiles/Section_06.dir/Section_06_Constants.cpp.o: CXX_COMPILER__Sectio
   OBJECT_DIR = CMakeFiles/Section_06.dir
   OBJECT_FILE_DIR = CMakeFiles/Section_06.dir
 
+build CMakeFiles/Section_06.dir/Section_06_Challenge.cpp.o: CXX_COMPILER__Section_06_unscanned_Debug /Users/jasoncameron/Desktop/Learning/LearningCpp/Udemy/CppCourse/Student/Section_06/Section_06_Challenge.cpp || cmake_object_order_depends_target_Section_06
+  DEP_FILE = CMakeFiles/Section_06.dir/Section_06_Challenge.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.5 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Section_06.dir
+  OBJECT_FILE_DIR = CMakeFiles/Section_06.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Section_06
@@ -69,7 +75,7 @@ build CMakeFiles/Section_06.dir/Section_06_Constants.cpp.o: CXX_COMPILER__Sectio
 #############################################
 # Link the executable Section_06
 
-build Section_06: CXX_EXECUTABLE_LINKER__Section_06_Debug CMakeFiles/Section_06.dir/main.cpp.o CMakeFiles/Section_06.dir/Section_06_Constants.cpp.o
+build Section_06: CXX_EXECUTABLE_LINKER__Section_06_Debug CMakeFiles/Section_06.dir/main.cpp.o CMakeFiles/Section_06.dir/Section_06_Constants.cpp.o CMakeFiles/Section_06.dir/Section_06_Challenge.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -mmacosx-version-min=14.5
   OBJECT_DIR = CMakeFiles/Section_06.dir
   POST_BUILD = :
