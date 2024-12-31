@@ -59,8 +59,7 @@ int main() {
 //    cout << testScores.at(4) << endl;
 
     // Example of a 2D-vector
-
-    vector <vector<int>> movieRatings
+    vector <vector<int> > movieRatings
     {
             {1, 2, 3, 4},
             {2, 3, 4, 5},
