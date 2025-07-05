@@ -72,6 +72,8 @@ int main() {
                 }
                 cout << "Largest number is: " << largest << endl;
             }
+        } else {
+            cout << "Invalid selection" << endl;
         }
 
     } while (selection != 'Q' && selection != 'q');
