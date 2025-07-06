@@ -7,105 +7,147 @@ using namespace std;
 
 int main() {
 
-    /* Section 10 Lesson 98
+    /* Section 10 Lesson Challenge
      *
      *
      */
 
-//    string s1 {"Jason"};
+    string message_to_code;
+    string coded_message;
+    string message_to_decode;
+    string decoded_message;
 
-//    for (char c: s1) {
-//        cout << c << endl;
-//    }
+    cout << "Enter a message to code: ";
+    getline(cin, message_to_code);
 
-//    for (int c: s1) {
-//        cout << c << endl;
-//    }
+    for (auto c : message_to_code) {
+        if (isalpha(c)) {
+            char base = islower(c) ? 'a' : 'A';
+            c = (c - base + 3) % 26 + base;
+        }
+        coded_message += c;
+    }
+
+    cout << "Coded message: " << coded_message << endl;
 
 
-//---
+    cout << "Enter a message to decode: ";
+    getline(cin, message_to_decode);
 
-//    string s1 {"This is a test"};
+    for (auto c : message_to_decode) {
+        if (isalpha(c)){
+            char base = islower(c) ? 'a' : 'A';
+            c = (c - base - 3) % 26 + base;
+        }
+        decoded_message += c;
+    }
 
-//    cout << s1.find("This") << endl;
-//    cout << s1.find("is") << endl;
-//    cout << s1.find("test") << endl;
-//    cout << s1.find('e') << endl;
-//    cout << s1.find("is", 4) << endl;
-//    cout << s1.find("XX", 4) << endl;
-//
-//    cout << s1.erase(0, 5) << endl;
-//    cout << s1.erase(5, 4) << endl;
-//    s1.clear();
+    cout << "Decoded message: " << decoded_message << endl;
 
-// ---
 
-//    string s1 {"Jason"};
-//    cout << s1.length() << endl;
-//    s1 += " Cameron";
-//    cout << s1 << endl;
 
-// ---
+    /* Section 10 Lesson 98
+     *
+     * ->
 
-//    string s1;
-//    cin >> s1;             // breaks if more than one word
-//    cout << s1 << endl;
+        //    string s1 {"Jason"};
 
-//    string s2;
-//    cout << s2;
-//    getline(cin, s2);
-//    cout << s2 << endl;     // Fixed
+        //    for (char c: s1) {
+        //        cout << c << endl;
+        //    }
 
-// ---
+        //    for (int c: s1) {
+        //        cout << c << endl;
+        //    }
 
-    string s0;
-    string s1 {"Apple"};
-    string s2 {"Banana"};
-    string s3 {"Kiwi"};
-    string s4 {"apple"};
-    string s5 {s1 + s2 + s3 + s4};          // Apple
-    string s6 {s1, 0, 3};        // App
-    string s7 (10, 'X');                    // XXXXXXXXXX
 
-//    cout << s0 << endl;                     // No garbage
-//    cout << s0.length() << endl;            // empty string
+        //---
 
-//    cout << "\nInitialization" << "\n-------------------------------" << endl;
-//    cout << "s1 is initialized to: " << s1 << endl;
-//    cout << "s2 is initialized to: " << s2 << endl;
-//    cout << "s3 is initialized to: " << s3 << endl;
-//    cout << "s4 is initialized to: " << s4 << endl;
-//    cout << "s5 is initialized to: " << s5 << endl;
-//    cout << "s6 is initialized to: " << s6 << endl;
-//    cout << "s7 is initialized to: " << s7 << endl;
+        //    string s1 {"This is a test"};
 
-// ---
+        //    cout << s1.find("This") << endl;
+        //    cout << s1.find("is") << endl;
+        //    cout << s1.find("test") << endl;
+        //    cout << s1.find('e') << endl;
+        //    cout << s1.find("is", 4) << endl;
+        //    cout << s1.find("XX", 4) << endl;
+        //
+        //    cout << s1.erase(0, 5) << endl;
+        //    cout << s1.erase(5, 4) << endl;
+        //    s1.clear();
 
-//    s1 = "Watermelon";
-//    cout << "s1 is now: " << s1 << endl;                    // Watermelon
-//    s2 = s1;
-//    cout << "s2 is now: " << s2 << endl;                   // Watermelon
+        // ---
 
-//    s3 = "Frank";
-//    cout << "s3 is now: " << s3 << endl;
+        //    string s1 {"Jason"};
+        //    cout << s1.length() << endl;
+        //    s1 += " Cameron";
+        //    cout << s1 << endl;
 
-//    s3[0] = 'C';                                            // Crank
-//    cout << "s3 change first letter to C: " << s3 << endl;
-//    s3.at(0) = 'P';                                         // Prank
-//    cout << "s3 change first letter to P: " << s3 << endl;
+        // ---
 
-// ---
+        //    string s1;
+        //    cin >> s1;             // breaks if more than one word
+        //    cout << s1 << endl;
 
-//    s1 = "Apple";
-//    for(size_t i {0}; i < s1.length(); i++){
-//        cout << s1.at(i) << endl;
-//    }
-//    cout << endl;
+        //    string s2;
+        //    cout << s2;
+        //    getline(cin, s2);
+        //    cout << s2 << endl;     // Fixed
 
-//    for (auto c: s1) {
-//        cout << c;
-//    }
-//    cout << endl;
+        // ---
+
+            string s0;
+            string s1 {"Apple"};
+            string s2 {"Banana"};
+            string s3 {"Kiwi"};
+            string s4 {"apple"};
+            string s5 {s1 + s2 + s3 + s4};          // Apple
+            string s6 {s1, 0, 3};        // App
+            string s7 (10, 'X');                    // XXXXXXXXXX
+
+        //    cout << s0 << endl;                     // No garbage
+        //    cout << s0.length() << endl;            // empty string
+
+        //    cout << "\nInitialization" << "\n-------------------------------" << endl;
+        //    cout << "s1 is initialized to: " << s1 << endl;
+        //    cout << "s2 is initialized to: " << s2 << endl;
+        //    cout << "s3 is initialized to: " << s3 << endl;
+        //    cout << "s4 is initialized to: " << s4 << endl;
+        //    cout << "s5 is initialized to: " << s5 << endl;
+        //    cout << "s6 is initialized to: " << s6 << endl;
+        //    cout << "s7 is initialized to: " << s7 << endl;
+
+        // ---
+
+        //    s1 = "Watermelon";
+        //    cout << "s1 is now: " << s1 << endl;                    // Watermelon
+        //    s2 = s1;
+        //    cout << "s2 is now: " << s2 << endl;                   // Watermelon
+
+        //    s3 = "Frank";
+        //    cout << "s3 is now: " << s3 << endl;
+
+        //    s3[0] = 'C';                                            // Crank
+        //    cout << "s3 change first letter to C: " << s3 << endl;
+        //    s3.at(0) = 'P';                                         // Prank
+        //    cout << "s3 change first letter to P: " << s3 << endl;
+
+        // ---
+
+        //    s1 = "Apple";
+        //    for(size_t i {0}; i < s1.length(); i++){
+        //        cout << s1.at(i) << endl;
+        //    }
+        //    cout << endl;
+
+        //    for (auto c: s1) {
+        //        cout << c;
+        //    }
+        //    cout << endl;
+
+     *
+     */
+
 
 
     /* Section 10 Lesson 96
