@@ -37,7 +37,7 @@ int main() {
     for (auto c : message_to_decode) {
         if (isalpha(c)){
             char base = islower(c) ? 'a' : 'A';
-            c = (c - base - 3) % 26 + base;
+            c = (c - base - 3 + 26) % 26 + base;
         }
         decoded_message += c;
     }
